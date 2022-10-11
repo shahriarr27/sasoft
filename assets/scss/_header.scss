@@ -1,0 +1,24 @@
+.header{
+  padding: 8px 0px;
+  background: var(--primary-color);
+  .navbar{
+    .navbar-brand{
+      color: white;
+      font-family: 'Baumans', cursive;
+      font-size: 22px;
+      font-weight: bold;
+      letter-spacing: .1rem;
+    }
+    .navbar-collapse{
+      .navbar-nav{
+        .nav-link{
+          font-family: 'Barlow Condensed', sans-serif;
+          color: white;
+          font-size: 18px;
+          text-transform: uppercase;
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+}
