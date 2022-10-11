@@ -3,18 +3,21 @@
 ===========================*/
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&family=Baumans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
   --font: "Inter", sans-serif;
   --body-color: #637381;
   --heading-color: #212b36;
-  --primary-color: #174A41;
-  --secondary-color: #4E774F;
+  --primary-color: #3056D3;
+  --secondary-color: #174A41;
   --white: #ffffff;
+  --offwhite: #D5DDF6;
+  --background: #F3F4FE;
 }
 
 body {
-  font-family: var(--font);
+  font-family: 'Poppins', sans-serif;
   font-weight: normal;
   font-style: normal;
   color: var(--body-color);
@@ -108,9 +111,9 @@ ol {
 }
 
 p {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
-  line-height: 26px;
+  line-height: 30px;
   color: var(--body-color);
   margin: 0px;
 }

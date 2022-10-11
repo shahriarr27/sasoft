@@ -1,0 +1,136 @@
+.footer {
+  background: var(--heading-color);
+  padding-top: 100px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+
+  .shape {
+    position: absolute;
+    z-index: -1;
+
+    &.shape-1 {
+      top: 0;
+      left: 0;
+    }
+
+    &.shape-2 {
+      top: 0;
+      right: 0;
+    }
+
+    &.shape-3 {
+      bottom: 0;
+      right: 0;
+    }
+  }
+}
+
+.widget {
+  margin-bottom: 50px;
+
+  .footer-logo {
+    color: white;
+    font-family: 'Baumans', cursive;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: .1rem;
+    margin-bottom: 20px;
+  }
+
+  .widget-desc {
+    font-size: 15px;
+    line-height: 24px;
+    color: #f3f4fe;
+    margin-bottom: 30px;
+    max-width: 260px;
+  }
+
+  .widget-socials {
+    display: flex;
+    align-items: center;
+
+    a {
+      font-size: 16px;
+      color: #dddddd;
+      margin-right: 20px;
+
+      &:hover {
+        color: var(--primary-color);
+      }
+    }
+  }
+
+  .widget-title {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 35px;
+    color: var(--white);
+  }
+
+  .widget-links {
+    a {
+      display: inline-block;
+      margin-bottom: 12px;
+      font-size: 15px;
+      line-height: 30px;
+      color: #f3f4fe;
+
+      &:hover {
+        color: var(--primary-color);
+        padding-left: 10px;
+      }
+    }
+  }
+
+  .widget-brands {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    a {
+      display: block;
+      max-width: 120px;
+      margin-bottom: 20px;
+      margin-right: 20px;
+
+    }
+  }
+}
+
+.footer-bottom {
+  padding: 35px 0;
+  border-top: 1px solid rgba(136, 144, 164, 0.43);
+
+  .footer-bottom-left {
+    display: flex;
+    align-items: center;
+
+    a {
+      font-weight: normal;
+      font-size: 15px;
+      color: #f3f4fe;
+      margin-right: 30px;
+      display: inline-block;
+      &:hover {
+        color: var(--primary-color);
+      }
+    }
+  }
+
+  .footer-bottom-right {
+    text-align: right;
+    font-weight: normal;
+    font-size: 15px;
+    color: #f3f4fe;
+
+    a {
+      color: var(--primary-color);
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+  }
+}
