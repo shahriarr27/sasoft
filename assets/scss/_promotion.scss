@@ -1,0 +1,28 @@
+.promotion{
+  padding: 70px 0px;
+  background: var(--primary-color);
+  .promo-wrapper{
+    text-align: center;
+    h1{
+      font-size: 42px;
+      color: var(--white);
+      margin-bottom: 30px;
+      font-weight: 600;
+      span{
+        color: #ffbb00;
+      }
+    }
+    .main-btn{
+      padding: 12px 30px;
+      border: 2px solid var(--white);
+      color: var(--white);
+      font-size: 18px;
+      border-radius: 40px;
+      transition: .4s;
+      &:hover{
+        background: var(--white);
+        color: var(--primary-color);
+      }
+    }
+  }
+}

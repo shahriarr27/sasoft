@@ -25,17 +25,17 @@
     }
   }
   .badge-steps{
-    margin-top: 30px;
+    margin-top: 50px;
     .single-step{
       width: 95%;
-      margin: 0 auto;
+      margin: 0 auto 30px;
       text-align: center;
       border-radius: 5px;
-      // box-shadow: 0px 0px 30px rgba(0,0,0,0.1);
       padding: 30px;
+      transition: .4s;
       .step-icon{
         img{
-          width: 150px;
+          width: 110px;
           border-radius: 50%;
         }
         margin-bottom: 15px;
@@ -45,6 +45,10 @@
           font-size: 22px;
           margin-bottom: 10px;
         }
+      }
+      &:hover{
+        transform: translateY(-10px);
+        box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.1);
       }
     }
   }

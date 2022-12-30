@@ -1,40 +1,31 @@
-/* ===== Contact CSS ===== */
-.ud-contact {
+
+.contact {
   padding: 120px 0px;
   position: relative;
-
-  @media #{$xs} {
-    padding: 80px 0;
-  }
 
   &::after {
     content: "";
     position: absolute;
     z-index: -1;
     width: 100%;
-    top: 0;
+    bottom: 0;
     left: 0;
     height: 50%;
-    background: #f3f4fe;
-
-    @media #{$lg} {
-      height: 45%;
-    }
+    background: var(--background);
   }
 }
 
-.ud-contact-title {
+.contact-title {
   margin-bottom: 150px;
-
-  @media #{$md, $xs} {
-    margin-bottom: 50px;
-  }
-
   span {
-    color: var(--heading-color);
-    font-weight: 600;
-    font-size: 15px;
+    color: var(--white);
+    font-weight: 500;
+    font-size: 16px;
     margin-bottom: 20px;
+    background: var(--primary-color);
+    padding: 2px 20px;
+    border-radius: 3px;
+    text-transform: uppercase;
   }
 
   h2 {
@@ -44,29 +35,25 @@
   }
 }
 
-.ud-contact-info-wrapper {
+.contact-info-wrapper {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 
-  @media #{$md, $xs} {
-    margin-bottom: 50px;
-  }
-
-  .ud-single-info {
+  .single-info {
     display: flex;
     max-width: 100%;
     width: 330px;
     margin-bottom: 30px;
   }
 
-  .ud-info-icon {
+  .info-icon {
     font-size: 32px;
     color: var(--primary-color);
     margin-right: 24px;
   }
 
-  .ud-info-meta {
+  .info-meta {
     h5 {
       font-weight: 600;
       font-size: 18px;
@@ -80,32 +67,21 @@
   }
 }
 
-.ud-contact-form-wrapper {
+.contact-form-wrapper {
   box-shadow: 0px 4px 28px rgba(0, 0, 0, 0.05);
   border-radius: 8px;
   background: var(--white);
   padding: 60px;
 
-  @media #{$xs} {
-    padding: 40px 30px;
-  }
-
-  @media #{$laptop, $lg, $sm} {
-    padding: 50px 40px;
-  }
-
-  .ud-contact-form-title {
+  .contact-form-title {
     font-style: normal;
     font-weight: 600;
     font-size: 28px;
     margin-bottom: 30px;
 
-    @media #{$xs} {
-      font-size: 24px;
-    }
   }
 
-  .ud-form-group {
+  .form-group {
     margin-bottom: 25px;
 
     label {
@@ -128,5 +104,26 @@
         border-color: var(--primary-color);
       }
     }
+  }
+  
+  .main-btn{
+    padding: 12px 30px;
+    background: var(--primary-color);
+    color: var(--white);
+    border-radius: 4px;
+    margin-bottom: 15px;
+    border: none;
+    &:hover{
+      background: var(--heading-color);
+      color: var(--white);
+    }
+  }
+}
+
+
+@media screen and (max-width:768px){
+  
+  .contact-title {
+    text-align: center;
   }
 }

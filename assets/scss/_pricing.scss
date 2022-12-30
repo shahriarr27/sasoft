@@ -36,11 +36,65 @@
   padding: 45px 30px;
   position: relative;
   transition: .4s;
+  .package-name{
+    font-size: 22px;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  .my-btn-wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+  }
+  
+.form-switch {
+  display: flex;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 0;
+  margin: 0;
+}
+.form-switch i {
+  position: relative;
+  padding: 0px;
+  width: 50px;
+  height: 18px;
+  border: 1px solid #DFDFDF;
+  border-radius: 15px;
+  transition: all 0.3s linear;
+  display: inline-block;
+}
+.form-switch i::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 20px;
+  height: 10px;
+  background-color: #00CE6C;
+  border-radius: 15px;
+  transform: translate3d(4px, 3px, 0);
+  transition: all 0.2s ease-in-out;
+}
+.form-switch input { display: none; }
+.form-switch input:checked + i::after { transform: translate3d(25px, 3px, 0); }
+
   &.active {
-    background: linear-gradient(180deg, #2F56D3 0%, #179AED 100%);
+    background: linear-gradient(180deg, var(--primary-color) 0%, var(--secondary-color) 100%);
     border: none;
     // padding: 55px 30px;
 
+    .package-name{
+      color: var(--white);
+    }
     .pricing-header {
       h3,
       h4 {
@@ -64,14 +118,14 @@
   }
 
   &.first-item::after {
-    background: #349FDA;
+    background: var(--primary-color);
     left: -2px;
     bottom: -2px;
     border-radius: 0px 55px 0px 8px;
   }
 
   &.last-item::after {
-    background: #34C6D4;
+    background: var(--secondary-color);
     top: -2px;
     right: -2px;
     border-radius: 0px 8px 0px 55px;
@@ -93,13 +147,17 @@
     h3 {
       font-weight: 500;
       font-size: 15px;
-      margin-bottom: 8px;
+      margin-bottom: 10px;
+      text-transform: capitalize;
     }
     h4 {
       font-weight: 600;
       font-size: 26px;
       color: var(--primary-color);
       margin-bottom: 20px;
+    }
+    .yr-price{
+      display: none;
     }
   }
 

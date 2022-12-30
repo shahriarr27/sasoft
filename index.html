@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SASOFT | Free Startup and SaaS Landing Page</title>
+    <title>SASOFT | SaaS Landing Page</title>
 
     <!--====== Favicon Icon ======-->
     <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/svg"/>
@@ -13,11 +13,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"></link>
     <link rel="stylesheet" href="assets/css/animate.css" />
     <link rel="stylesheet" href="assets/css/lineicons.css" />
+    
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/scss/style.css" />
   </head>
   <body>
     <!-- ====== Header Start ====== -->
-    <header class="header">
+    <header class="header" id="top">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
@@ -25,7 +27,7 @@
               <div class="container">
                 <a class="navbar-brand" href="index.html">SASOFT</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sasoftNavbar" aria-controls="sasoftNavbar" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
+                  <i class="lni lni-menu"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="sasoftNavbar">
                   <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -62,7 +64,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6 align-self-center">
-            <div class="hero-content-left wow fadeInUp" data-wow-delay=".2s">
+            <div class="hero-content-left wow fadeInUp">
               <h1 class="hero-title">
                 Experience our new Software Landing page
               </h1>
@@ -70,14 +72,14 @@
                 Multidisciplinary Web Template Built with Your Favourite
                 Technology - HTML, CSS, Bootstrap.
               </p>
-              <ul class="hero-buttons">
+              <ul class="hero-buttons wow fadeInUp"data-wow-delay=".5s">
                 <li>
-                  <a href="javascript:void(0)" rel="nofollow noopener" target="_blank" class="main-btn white-btn">
+                  <a href="javascript:void(0)" rel="nofollow noopener" class="main-btn white-btn">
                     Download Now
                   </a>
                 </li>
                 <li>
-                  <a href="javascript:void(0)" target="_blank" class="sec-btn link-btn">
+                  <a href="javascript:void(0)" class="sec-btn link-btn">
                     Learn More <i class="lni lni-arrow-right"></i>
                   </a>
                 </li>
@@ -85,8 +87,18 @@
             </div>
           </div>
           <div class="col-lg-6 align-self-center">
-            <div class="hero-content-right">
-              <img src="assets/images/hero/img10.png" class="img-fluid" alt="hero-image">
+            <div class="hero-content-right wow fadeInDown">
+              <img src="assets/images/hero/img10.png" class="img-fluid hero-img" alt="hero-image">
+              <img
+                src="assets/images/hero/dotted-shape.svg"
+                alt="shape"
+                class="shape shape-1"
+              />
+              <img
+                src="assets/images/hero/dotted-shape.svg"
+                alt="shape"
+                class="shape shape-2"
+              />
             </div>
           </div>
         </div>
@@ -99,7 +111,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
-            <div class="section-title">
+            <div class="section-title wow fadeInUp" data-wow-delay=".5s">
               <span>Badges</span>
               <h2>Get a free digital badge now!</h2>
               <p>
@@ -112,7 +124,7 @@
         <div class="badge-steps">
           <div class="row">
             <div class="col-xl-4 col-lg-4 col-sm-12">
-              <div class="single-step wow fadeInUp" data-wow-delay=".1s">
+              <div class="single-step wow fadeInLeft" data-wow-delay=".3s">
                 <div class="step-icon">
                   <img src="assets/images/badges/download.gif" alt="download" class="img-fluid">
                 </div>
@@ -125,12 +137,15 @@
               </div>
             </div>
             <div class="col-xl-4 col-lg-4 col-sm-12">
-              <div class="single-step wow fadeInUp" data-wow-delay=".15s">
+              <div class="single-step wow fadeInUp" data-wow-delay=".2s">
                 <div class="step-icon">
                   <img src="assets/images/badges/log-in.gif" alt="download" class="img-fluid">
                 </div>
                 <div class="step-content">
                   <h3 class="step-title">Sign Up</h3>
+                  <!-- Calendly link widget begin -->
+                  <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/icurriculum/icurriculum-product-demo'});return false;">Book Now</a>
+                  <!-- Calendly link widget end -->
                   <p class="step-desc">
                     Lorem Ipsum is simply dummy text of the printing and industry.
                   </p>
@@ -138,7 +153,7 @@
               </div>
             </div>
             <div class="col-xl-4 col-lg-4 col-sm-12">
-              <div class="single-step wow fadeInUp" data-wow-delay=".2s">
+              <div class="single-step wow fadeInRight" data-wow-delay=".3s">
                 <div class="step-icon">
                   <img src="assets/images/badges/badge2.gif" alt="download" class="img-fluid">
                 </div>
@@ -161,7 +176,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
-            <div class="section-title mx-auto text-center">
+            <div class="section-title mx-auto text-center wow fadeInUp" data-wow-delay=".5s">
               <span>Pricing</span>
               <h2>Our Pricing Plans</h2>
               <p>
@@ -172,15 +187,23 @@
           </div>
         </div>
 
-        <div class="row align-items-center justify-content-center">
-          <div class="col-lg-4 col-md-6 col-sm-10">
+        <div class="row align-items-start justify-content-center">
+          <div class="col-lg-4 col-md-12 col-sm-10">
             <div
-              class="single-pricing first-item wow fadeInUp"
-              data-wow-delay=".15s"
+              class="single-pricing first-item wow fadeInLeft"
+              data-wow-delay=".7s"
             >
               <div class="pricing-header">
-                <h3>STARTING FROM</h3>
-                <h4>$ 39.99/mo</h4>
+                <h1 class="package-name">Perfect to Start</h1>
+                <h3>Starting From</h3>
+                <div class="my-btn-wrapper">
+                  <label class="form-switch">
+                    <input type="checkbox" class="my-toggle1">
+                    <i></i>
+                  </label>
+                </div>
+                <h4 class="mo-price1">$ 50.99/mo</h4>
+                <h4 class="yr-price yr-price1">$ 90.99/yr</h4>
               </div>
               <div class="pricing-body">
                 <ul>
@@ -188,8 +211,6 @@
                   <li>All UI components</li>
                   <li>Lifetime access</li>
                   <li>Free updates</li>
-                  <li>Use on 1 (one) project</li>
-                  <li>4 Months support</li>
                 </ul>
               </div>
               <div class="pricing-footer">
@@ -199,14 +220,22 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-10">
+          <div class="col-lg-4 col-md-12 col-sm-10">
             <div
               class="single-pricing active wow fadeInUp"
-              data-wow-delay=".1s"
+              data-wow-delay=".6s"
             >
               <div class="pricing-header">
-                <h3>STARTING FROM</h3>
-                <h4>$ 50.99/mo</h4>
+                <h1 class="package-name">Best Value</h1>
+                <h3>Starting From</h3>
+                <div class="my-btn-wrapper">
+                  <label class="form-switch">
+                    <input type="checkbox" class="my-toggle2">
+                    <i></i>
+                  </label>
+                </div>
+                <h4 class="mo-price2">$ 70.99/mo</h4>
+                <h4 class="yr-price yr-price2">$ 150.99/yr</h4>
               </div>
               <div class="pricing-body">
                 <ul>
@@ -225,14 +254,22 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-10">
+          <div class="col-lg-4 col-md-12 col-sm-10">
             <div
-              class="single-pricing last-item wow fadeInUp"
-              data-wow-delay=".15s"
+              class="single-pricing last-item wow fadeInRight"
+              data-wow-delay=".7s"
             >
               <div class="pricing-header">
-                <h3>STARTING FROM</h3>
-                <h4>$ 70.99/mo</h4>
+                <h1 class="package-name">Unlimited <br>Badges/Users</h1>
+                <h3>Starting From</h3>
+                <div class="my-btn-wrapper">
+                  <label class="form-switch">
+                    <input type="checkbox" class="my-toggle3">
+                    <i></i>
+                  </label>
+                </div>
+                <h4 class="mo-price3">$ 150.99/mo</h4>
+                <h4 class="yr-price yr-price3">$ 250.99/yr</h4>
               </div>
               <div class="pricing-body">
                 <ul>
@@ -240,6 +277,8 @@
                   <li>All UI components</li>
                   <li>Lifetime access</li>
                   <li>Free updates</li>
+                  <li>Use on 1 (one) project</li>
+                  <li>12 Months support</li>
                   <li>Use on 1 (one) project</li>
                   <li>12 Months support</li>
                 </ul>
@@ -256,8 +295,105 @@
     </section>
     <!-- ====== Pricing End ====== -->
 
+    <!-- ====== Promotion End ====== -->
+    <section class="promotion">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="promo-wrapper wow fadeInUp">
+              <h1>Before Ends Get <span class="disc">30%</span> Discount</h1>
+              <a href="javascript:void(0)" class="main-btn border-btn wow fadeInUp" data-wow-delay=".3s">
+                Purchase Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== Promotion End ====== -->
+
+    <!-- ====== Contact Start ====== -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-xl-8 col-lg-7">
+            <div class="contact-content-wrapper">
+              <div class="contact-title wow fadeInUp">
+                <span>CONTACT</span>
+                <h2>
+                  Let’s talk<br />
+                  Love to hear from you!
+                </h2>
+              </div>
+              <div class="contact-info-wrapper">
+                <div class="single-info">
+                  <div class="info-icon">
+                    <i class="lni lni-map-marker"></i>
+                  </div>
+                  <div class="info-meta">
+                    <h5>Our Location</h5>
+                    <p>401 Broadway, 24th Floor, Orchard Cloud View, London</p>
+                  </div>
+                </div>
+                <div class="single-info">
+                  <div class="info-icon">
+                    <i class="lni lni-envelope"></i>
+                  </div>
+                  <div class="info-meta">
+                    <h5>How Can We Help?</h5>
+                    <p>info@yourdomain.com</p>
+                    <p>contact@yourdomain.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-5">
+            <div
+              class="contact-form-wrapper wow fadeInDown"
+              data-wow-delay=".2s"
+            >
+              <h3 class="contact-form-title">Send us a Message</h3>
+              <form class="contact-form">
+                <div class="form-group">
+                  <label for="fullName">Full Name*</label>
+                  <input
+                    type="text"
+                    name="fullName"
+                    placeholder="your name"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email*</label>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="example@yourmail.com"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="message">Message*</label>
+                  <textarea
+                    name="message"
+                    rows="1"
+                    placeholder="type your message here"
+                  ></textarea>
+                </div>
+                <div class="form-group mb-0">
+                  <button type="submit" class="main-btn">
+                    Send Message
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== Contact End ====== -->
+
     <!-- ====== Footer Start ====== -->
-    <footer class="footer wow fadeInUp" data-wow-delay=".15s">
+    <footer class="footer">
       <div class="shape shape-1">
         <img src="assets/images/footer/shape-1.svg" alt="shape" />
       </div>
@@ -311,13 +447,13 @@
                     <a href="javascript:void(0)">Home</a>
                   </li>
                   <li>
-                    <a href="javascript:void(0)">Features</a>
+                    <a href="javascript:void(0)">Products</a>
                   </li>
                   <li>
-                    <a href="javascript:void(0)">About</a>
+                    <a href="javascript:void(0)">Pricing</a>
                   </li>
                   <li>
-                    <a href="javascript:void(0)">Testimonial</a>
+                    <a href="javascript:void(0)">Demo</a>
                   </li>
                 </ul>
               </div>
@@ -394,14 +530,20 @@
     <!-- ====== Footer End ====== -->
 
     <!-- ====== Back To Top Start ====== -->
-    <!-- <a href="javascript:void(0)" class="back-to-top">
+    <a href="#top" class="back-to-top">
       <i class="lni lni-chevron-up"> </i>
-    </a> -->
+    </a>
     <!-- ====== Back To Top End ====== -->
 
     <!-- ====== All Javascript Files ====== -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- <script src="assets/js/wow.min.js"></script> -->
+    <script src="assets/js/wow.min.js"></script>
+    
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <script src="assets/js/scripts.js"></script>
+    <script>
+      new WOW().init();
+      </script>
   </body>
 </html>

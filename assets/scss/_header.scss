@@ -22,3 +22,24 @@
     }
   }
 }
+
+@media screen and (max-width:768px){
+  .navbar-toggler{
+    border-color: white;
+    i{
+      color: white !important;
+      font-size: 22px;
+    }
+  }
+  .header{
+    .navbar{
+      .navbar-collapse{
+        .navbar-nav{
+          .nav-link{
+            margin-left: 0px;
+          }
+        }
+      }
+    }
+  }
+}
